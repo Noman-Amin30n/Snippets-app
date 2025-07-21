@@ -56,9 +56,9 @@ export default function SignIn() {
         method: "POST",
         body: formData,
       });
-      if (!res.ok) {
-        throw new Error("Error while registering user");
-      }
+      // if (!res.ok) {
+      //   throw new Error("Error while registering user");
+      // }
       const result = await res.json();
       if (result.success) {
         setIsSucceeded(true);
